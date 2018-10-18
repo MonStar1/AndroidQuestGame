@@ -7,9 +7,6 @@
         android:id="@+id/introFragment"
         android:name="com.andreip.androidquestgame.intro.IntroFragment"
         android:label="IntroFragment">
-        <action
-            android:id="@+id/action_introFragment_to_level1Fragment2"
-            app:destination="@id/level1Fragment"/>
     </fragment>
     <fragment
         android:id="@+id/level1Fragment"

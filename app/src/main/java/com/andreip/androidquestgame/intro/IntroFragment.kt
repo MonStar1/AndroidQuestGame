@@ -19,7 +19,7 @@ class IntroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button_next.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.level1Fragment)
         }
     }
 }
