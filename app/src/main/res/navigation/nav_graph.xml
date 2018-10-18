@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.andreip.androidquestgame.intro.IntroFragment"
+        android:label="IntroFragment">
+        <action
+            android:id="@+id/action_introFragment_to_level1Fragment2"
+            app:destination="@id/level1Fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/level1Fragment"
+        android:name="com.andreip.androidquestgame.level1.Level1Fragment"
+        android:label="Level1Fragment"></fragment>
+</navigation>

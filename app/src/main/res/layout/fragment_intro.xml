@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/vampire"
+            android:text="Добро пожаловать"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/vampire"
+            android:paddingTop="4dp"
+            android:text="Вы попали в интерактивный квест. Все события будут происходить в реальности, но для продолжения вам придется использовать телефон."
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="normal"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/vampire"
+            android:paddingTop="4dp"
+            android:text="1) Ни в коем случае не выключайте телефон и не закрывайте данное приложение, иначе вся информация будет безвозвратно утеряна."
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="normal"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/vampire"
+            android:paddingTop="4dp"
+            android:text="2) Ни в коем случае не задавайте лишних вопросов, иначе весь интерес будет утерян."
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="normal"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/vampire"
+            android:paddingTop="4dp"
+            android:text="Удачи !!!"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigate_next_black_24dp"/>
+</FrameLayout>
