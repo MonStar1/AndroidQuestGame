@@ -20,19 +20,7 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/vampire"
             android:paddingTop="4dp"
-            android:text="Уровень 1"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="normal"/>
-
-        <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/vampire"
-            android:paddingTop="4dp"
-            android:text="Осталось времени"
+            android:text="Уровень 2"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="normal"/>

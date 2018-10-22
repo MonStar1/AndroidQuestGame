@@ -7,9 +7,20 @@
         android:id="@+id/introFragment"
         android:name="com.andreip.androidquestgame.intro.IntroFragment"
         android:label="IntroFragment">
+        <action
+            android:id="@+id/action_introFragment_to_level1Fragment"
+            app:destination="@id/level1Fragment"/>
     </fragment>
     <fragment
         android:id="@+id/level1Fragment"
         android:name="com.andreip.androidquestgame.level1.Level1Fragment"
-        android:label="Level1Fragment"></fragment>
+        android:label="Level1Fragment">
+        <action
+            android:id="@+id/action_level1Fragment_to_level2Fragment"
+            app:destination="@id/level2Fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/level2Fragment"
+        android:name="com.andreip.androidquestgame.level2.Level2Fragment"
+        android:label="Level2Fragment"/>
 </navigation>
