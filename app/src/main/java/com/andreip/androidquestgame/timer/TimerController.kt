@@ -52,4 +52,12 @@ class TimerController(val tag: String) {
         timerPref.startTime = 0
         timerPref.timerLimitInMillis = 0
     }
+
+    fun convertMillisToTime(millis: Long): String {
+        val second = millis / 1000 % 60
+        val minute = millis / (1000 * 60) % 60
+        val hour = millis / (1000 * 60 * 60) % 24
+
+        return String.format("%02d : %02d : %02d", hour, minute, second)
+    }
 }

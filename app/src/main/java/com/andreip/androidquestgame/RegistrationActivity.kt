@@ -25,7 +25,7 @@ class RegistrationActivity : Activity() {
         val currentUser = auth.currentUser
 
         if (currentUser != null) {
-            username.text = currentUser.email
+//            username.text = currentUser.email
 
             val refreshedToken = FirebaseInstanceId.getInstance().token
 
@@ -57,7 +57,7 @@ class RegistrationActivity : Activity() {
             val response = IdpResponse.fromResultIntent(data)
 
             if (resultCode == RESULT_OK) {
-                username.text = auth.currentUser?.email
+//                username.text = auth.currentUser?.email
                 registered()
             } else {
                 username.text = response?.error?.errorCode.toString()
@@ -68,6 +68,11 @@ class RegistrationActivity : Activity() {
     private fun registered() {
         FirebaseMessaging.getInstance().subscribeToTopic("quest")
 
-        hideAppIcon()
+        if (questStatePref.questStarted) {
+            startActivity(Intent(this, QuestActivity::class.java))
+            finish()
+        }
+
+//        hideAppIcon()
     }
 }

@@ -9,7 +9,12 @@
         android:label="IntroFragment">
         <action
             android:id="@+id/action_introFragment_to_level1Fragment"
-            app:destination="@id/level1Fragment"/>
+            app:destination="@id/level1Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/level1Fragment"
@@ -17,10 +22,20 @@
         android:label="Level1Fragment">
         <action
             android:id="@+id/action_level1Fragment_to_level2Fragment"
-            app:destination="@id/level2Fragment"/>
+            app:destination="@id/level2Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/level2Fragment"
         android:name="com.andreip.androidquestgame.level2.Level2Fragment"
-        android:label="Level2Fragment"/>
+        android:label="Level2Fragment"
+        app:enterAnim="@anim/fui_slide_in_right"
+        app:exitAnim="@anim/fui_slide_out_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 </navigation>

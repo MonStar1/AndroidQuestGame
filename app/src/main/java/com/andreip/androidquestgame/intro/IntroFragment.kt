@@ -7,9 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.andreip.androidquestgame.R
+import com.andreip.androidquestgame.questStatePref
+import com.andreip.androidquestgame.state.QuestState
 import kotlinx.android.synthetic.main.fragment_intro.*
 
 class IntroFragment : Fragment() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        questStatePref.questState = QuestState.INTRO.ordinal
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_intro, container, false)
@@ -18,8 +26,9 @@ class IntroFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        button_next.setOnClickListener {
-            findNavController().navigate(R.id.level1Fragment)
+
+        buttonNext.setOnClickListener {
+            findNavController().navigate(R.id.action_introFragment_to_level1Fragment)
         }
     }
 }
