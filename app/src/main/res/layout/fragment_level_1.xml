@@ -20,22 +20,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Уровень 1" />
+            android:text="Уровень 1"/>
 
         <android.support.v7.widget.AppCompatTextView
+            style="@style/LevelDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/vampire"
             android:paddingTop="4dp"
-            android:text="В квартире спрятан код для прохождения на следующий уровень"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="normal" />
+            android:text="В квартире спрятан код для прохождения на следующий уровень"/>
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
+            android:id="@+id/questInteractionView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:hintImage="@drawable/ic_search"
+            app:hintTag="level_1_tag"
+            app:hintText="ПОДСКАЗКА!! ВВЕДИ 0776"
+            app:hintTimeInSeconds="2"
+            app:rightCodes="@array/level_1_codes"/>
 
     </LinearLayout>
 
@@ -45,6 +48,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_navigate_next_black_24dp"
-        android:visibility="gone" />
+        android:visibility="invisible"
+        android:src="@drawable/ic_navigate_next_black_24dp"/>
 </FrameLayout>

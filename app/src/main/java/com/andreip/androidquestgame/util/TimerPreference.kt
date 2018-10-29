@@ -9,11 +9,15 @@ class TimerPreference(context: Context) {
 
     private val pref = PreferenceHelper.timerPreferences(context)
 
-    var startTime: Long
-        get() = pref.getLong(START_TIME)
-        set(value) = pref.putLong(START_TIME, value)
+    fun setTimerLimitInMillis(tag: String, time: Long) {
+        pref.putLong(TIMER_LIMIT_IN_SECONDS + tag, time)
+    }
 
-    var timerLimitInMillis: Long
-        get() = pref.getLong(TIMER_LIMIT_IN_SECONDS)
-        set(value) = pref.putLong(TIMER_LIMIT_IN_SECONDS, value)
+    fun getTimerLimitInMillis(tag: String) = pref.getLong(TIMER_LIMIT_IN_SECONDS + tag)
+
+    fun setStartTime(tag: String, time: Long) {
+        pref.putLong(START_TIME + tag, time)
+    }
+
+    fun getStartTime(tag: String) = pref.getLong(START_TIME + tag)
 }

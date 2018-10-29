@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="level_1_codes">
+        <item>0776</item>
+        <item>111</item>
+        <item>133664</item>
+    </string-array>
+
+    <string-array name="level_2_codes">
+        <item>100</item>
+    </string-array>
+
+    <string-array name="level_5_codes">
+        <item>Ориса</item>
+        <item>Ариса</item>
+        <item>Orisa</item>
+    </string-array>
+</resources>

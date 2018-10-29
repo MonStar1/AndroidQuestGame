@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QuestInteractionView">
+        <attr name="hintTag" format="string"/>
+        <attr name="hintTimeInSeconds" format="integer"/>
+        <attr name="hintText" format="string"/>
+        <attr name="hintImage" format="reference"/>
+        <attr name="rightCodes" format="reference"/>
+    </declare-styleable>
+
+</resources>

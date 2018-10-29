@@ -19,7 +19,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Уровень 2" />
+            android:text="Уровень 2"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/LevelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="4dp"
+            android:text="Простой математический пример (5+2*10-15)^2 = ???  ^ - это значок возведения в степень. Число это код для продолжения."/>
+
+        <com.andreip.androidquestgame.widget.QuestInteractionView
+            android:id="@+id/questInteractionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:hintTag="level_2_tag"
+            app:hintText="В математике сначала производится умножение и деление, а только потом вычитание и сложение"
+            app:hintTimeInSeconds="2"
+            app:rightCodes="@array/level_2_codes"/>
 
     </LinearLayout>
 
@@ -29,5 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_navigate_next_black_24dp" />
+        android:src="@drawable/ic_navigate_next_black_24dp"
+        android:visibility="invisible"/>
 </FrameLayout>

@@ -3,7 +3,7 @@ package com.andreip.androidquestgame.timer
 import android.os.CountDownTimer
 import com.andreip.androidquestgame.timerPref
 
-class TimerController(val tag: String) {
+class TimerController(private val tag: String) {
 
     var countDownTimer: CountDownTimer? = null
 
@@ -12,8 +12,8 @@ class TimerController(val tag: String) {
             throw IllegalStateException("You can't start the same timer twice. Use subscribe(..) to get updates of current timer")
         }
 
-        timerPref.startTime = System.currentTimeMillis()
-        timerPref.timerLimitInMillis = timerLimitInSeconds * 1000
+        timerPref.setStartTime(tag, System.currentTimeMillis())
+        timerPref.setTimerLimitInMillis(tag, timerLimitInSeconds * 1000)
     }
 
     fun subscribe(timeLeftListener: (Long) -> Unit, timeIsOverListener: () -> Unit) {
@@ -36,7 +36,7 @@ class TimerController(val tag: String) {
         countDownTimer?.cancel()
     }
 
-    fun isTimerStarted() = timerPref.startTime > 0
+    fun isTimerStarted() = timerPref.getStartTime(tag) > 0
 
     fun isTimeOver() = getEndTime() < System.currentTimeMillis()
 
@@ -46,11 +46,11 @@ class TimerController(val tag: String) {
         return if (timeLeft < 0) 0 else timeLeft
     }
 
-    private fun getEndTime() = timerPref.startTime + timerPref.timerLimitInMillis
+    private fun getEndTime() = timerPref.getStartTime(tag) + timerPref.getTimerLimitInMillis(tag)
 
     fun clear() {
-        timerPref.startTime = 0
-        timerPref.timerLimitInMillis = 0
+        timerPref.setStartTime(tag, 0)
+        timerPref.setTimerLimitInMillis(tag, 0)
     }
 
     fun convertMillisToTime(millis: Long): String {

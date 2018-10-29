@@ -22,7 +22,7 @@ class QuestActivity : FragmentActivity() {
             window.statusBarColor = Color.BLACK
         }
 
-        questStatePref.questState = 0 //TORO remove later
+//        questStatePref.questState = 0 //TODO remove later
 
         restoreQuestState()
     }

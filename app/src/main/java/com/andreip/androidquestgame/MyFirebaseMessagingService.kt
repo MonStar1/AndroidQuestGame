@@ -8,6 +8,7 @@ import android.content.Intent
 import android.media.RingtoneManager
 import android.os.Build
 import android.support.v4.app.NotificationCompat
+import com.andreip.androidquestgame.util.showAppIcon
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 
@@ -22,6 +23,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     private fun sendNotification() {
         questStatePref.questStarted = true
+
+        showAppIcon(RegistrationActivity::class.java)
 
         val intent = Intent(this, QuestActivity::class.java)
 
