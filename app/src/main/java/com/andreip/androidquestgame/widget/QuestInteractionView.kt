@@ -67,6 +67,10 @@ class QuestInteractionView @JvmOverloads constructor(
 
         textHelp.text = hintText
         imageHelp.setImageResource(hintImage)
+
+        if (isInEditMode) {
+            helpView.visible()
+        }
     }
 
     override fun onAttachedToWindow() {

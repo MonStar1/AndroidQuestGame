@@ -36,6 +36,7 @@
             app:hintTag="level_2_tag"
             app:hintText="В математике сначала производится умножение и деление, а только потом вычитание и сложение"
             app:hintTimeInSeconds="2"
+            app:hintImage="@drawable/hint_level_2"
             app:rightCodes="@array/level_2_codes"/>
 
     </LinearLayout>
