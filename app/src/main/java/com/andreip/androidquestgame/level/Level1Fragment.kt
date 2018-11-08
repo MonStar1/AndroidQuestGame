@@ -1,4 +1,4 @@
-package com.andreip.androidquestgame.level1
+package com.andreip.androidquestgame.level
 
 import com.andreip.androidquestgame.BaseLevelFragment
 import com.andreip.androidquestgame.R

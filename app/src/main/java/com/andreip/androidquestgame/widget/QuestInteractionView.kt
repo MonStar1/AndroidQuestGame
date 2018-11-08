@@ -18,7 +18,7 @@ class QuestInteractionView @JvmOverloads constructor(
     private val hintTag: String
     private val hintTimeInSeconds: Int
     private val hintText: String
-    private val rightCodes: Array<out CharSequence>
+    private val rightCodes = mutableListOf<CharSequence>()
 
     @DrawableRes
     private val hintImage: Int
@@ -33,10 +33,11 @@ class QuestInteractionView @JvmOverloads constructor(
         val attributes = context.theme.obtainStyledAttributes(attrs, R.styleable.QuestInteractionView, defStyleAttr, 0)
 
         hintTag = attributes.getString(R.styleable.QuestInteractionView_hintTag)!!
-        hintTimeInSeconds = attributes.getInteger(R.styleable.QuestInteractionView_hintTimeInSeconds, 0)
+//        hintTimeInSeconds = attributes.getInteger(R.styleable.QuestInteractionView_hintTimeInSeconds, 0)
+        hintTimeInSeconds = 2 // TODO remove later
         hintText = attributes.getString(R.styleable.QuestInteractionView_hintText) ?: ""
         hintImage = attributes.getResourceId(R.styleable.QuestInteractionView_hintImage, 0)
-        rightCodes = attributes.getTextArray(R.styleable.QuestInteractionView_rightCodes)
+        rightCodes.addAll(attributes.getTextArray(R.styleable.QuestInteractionView_rightCodes).toList())
 
         attributes.recycle()
 
@@ -87,5 +88,9 @@ class QuestInteractionView @JvmOverloads constructor(
         super.onDetachedFromWindow()
 
         timer.unsubscribe()
+    }
+
+    fun addRightCodes(codes: Array<String>) {
+        rightCodes.addAll(codes)
     }
 }

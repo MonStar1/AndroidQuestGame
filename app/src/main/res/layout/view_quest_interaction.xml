@@ -8,6 +8,16 @@
     tools:background="@android:color/black">
 
     <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label"
+        style="@style/LevelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Подсказка через"
+        app:layout_constraintEnd_toStartOf="@id/counter"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
         android:id="@+id/counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,8 +28,8 @@
         android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="00 : 35 : 29"/>
+        app:layout_constraintStart_toEndOf="@id/label"
+        tools:text="00 : 35 : 29" />
 
     <LinearLayout
         android:id="@+id/acceptContainer"
@@ -55,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vampire"
-            android:text="OK"/>
+            android:text="OK" />
 
     </LinearLayout>
 
@@ -81,13 +91,16 @@
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="normal"
-            tools:text="Подсказка"/>
+            tools:text="Подсказка" />
 
         <ImageView
             android:id="@+id/imageHelp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:src="@tools:sample/avatars"/>
+            android:adjustViewBounds="true"
+            android:maxHeight="350dp"
+            android:maxWidth="350dp"
+            tools:src="@drawable/hint_level_1" />
 
     </LinearLayout>
 

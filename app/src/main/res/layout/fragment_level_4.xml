@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Уровень 2" />
+            android:text="Уровень 4" />
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/LevelDescription"
@@ -28,17 +28,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="Простой математический пример (5+2*10-15)^2 = ???  ^ - это значок возведения в степень. Число это код для продолжения." />
+            android:text="А теперь придется немного прогуляться.
+Пойди в магазин Соседи и купи обычную колу 1 литр и
+Финальная сумма в чеке будет твоим кодом
+Совет: вводи код сразу" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:hintImage="@drawable/hint_level_2"
-            app:hintTag="level_2_tag"
-            app:hintText="В математике сначала производится умножение и деление, а только потом вычитание и сложение"
-            app:hintTimeInSeconds="120"
-            app:rightCodes="@array/level_2_codes" />
+            app:hintTag="level_4_tag"
+            app:hintText="Не вышло? Ну тогда просто введи единицу"
+            app:hintTimeInSeconds="1800"
+            app:rightCodes="@array/level_4_codes" />
 
     </LinearLayout>
 

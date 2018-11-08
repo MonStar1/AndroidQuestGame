@@ -13,12 +13,6 @@ import kotlinx.android.synthetic.main.fragment_intro.*
 
 class IntroFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        questStatePref.questState = QuestState.INTRO.ordinal
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_intro, container, false)
     }

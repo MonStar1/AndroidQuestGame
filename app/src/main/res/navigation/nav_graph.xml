@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/level1Fragment"
-        android:name="com.andreip.androidquestgame.level1.Level1Fragment"
+        android:name="com.andreip.androidquestgame.level.Level1Fragment"
         android:label="Level1Fragment">
         <action
             android:id="@+id/action_level1Fragment_to_level2Fragment"
@@ -31,11 +31,133 @@
     </fragment>
     <fragment
         android:id="@+id/level2Fragment"
-        android:name="com.andreip.androidquestgame.level2.Level2Fragment"
+        android:name="com.andreip.androidquestgame.level.Level2Fragment"
         android:label="Level2Fragment"
         app:enterAnim="@anim/fui_slide_in_right"
         app:exitAnim="@anim/fui_slide_out_left"
         app:launchSingleTop="true"
         app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        app:popExitAnim="@anim/nav_default_pop_exit_anim">
+        <action
+            android:id="@+id/action_level2Fragment_to_level3Fragment"
+            app:destination="@id/level3Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level3Fragment"
+        android:name="com.andreip.androidquestgame.level.Level3Fragment"
+        android:label="Level3Fragment">
+        <action
+            android:id="@+id/action_level3Fragment_to_level4Fragment"
+            app:destination="@id/level4Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level4Fragment"
+        android:name="com.andreip.androidquestgame.level.Level4Fragment"
+        android:label="Level4Fragment"
+        app:enterAnim="@anim/fui_slide_in_right"
+        app:exitAnim="@anim/fui_slide_out_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim">
+        <action
+            android:id="@+id/action_level4Fragment_to_level5Fragment"
+            app:destination="@id/level5Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level5Fragment"
+        android:name="com.andreip.androidquestgame.level.Level5Fragment"
+        android:label="Level5Fragment">
+        <action
+            android:id="@+id/action_level5Fragment_to_level6Fragment"
+            app:destination="@id/level6Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level6Fragment"
+        android:name="com.andreip.androidquestgame.level.Level6Fragment"
+        android:label="Level6Fragment">
+        <action
+            android:id="@+id/action_level6Fragment_to_level7Fragment"
+            app:destination="@id/level7Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level7Fragment"
+        android:name="com.andreip.androidquestgame.level.Level7Fragment"
+        android:label="Level7Fragment">
+        <action
+            android:id="@+id/action_level7Fragment_to_level8Fragment"
+            app:destination="@id/level8Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level8Fragment"
+        android:name="com.andreip.androidquestgame.level.Level8Fragment"
+        android:label="Level8Fragment">
+        <action
+            android:id="@+id/action_level8Fragment_to_level9Fragment"
+            app:destination="@id/level9Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level9Fragment"
+        android:name="com.andreip.androidquestgame.level.Level9Fragment"
+        android:label="Level9Fragment">
+        <action
+            android:id="@+id/action_level9Fragment_to_level10Fragment"
+            app:destination="@id/level10Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level10Fragment"
+        android:name="com.andreip.androidquestgame.level.Level10Fragment"
+        android:label="Level10Fragment">
+        <action
+            android:id="@+id/action_level10Fragment_to_level11Fragment"
+            app:destination="@id/level11Fragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/level11Fragment"
+        android:name="com.andreip.androidquestgame.level.Level11Fragment"
+        android:label="Level11Fragment" />
 </navigation>

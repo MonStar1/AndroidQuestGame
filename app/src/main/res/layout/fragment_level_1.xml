@@ -28,16 +28,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="В квартире спрятан код для прохождения на следующий уровень"/>
+            android:text="В квартире спрятан код для прохождения на следующий уровень. Ищи код за рамкой."/>
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:hintImage="@drawable/ic_search"
+            app:hintImage="@drawable/hint_level_1"
             app:hintTag="level_1_tag"
-            app:hintText="ПОДСКАЗКА!! ВВЕДИ 0776"
-            app:hintTimeInSeconds="2"
+            app:hintText="ПОДСКАЗКА!! Введи нашу первую дату без точек и пробелов"
+            app:hintTimeInSeconds="300"
             app:rightCodes="@array/level_1_codes"/>
 
     </LinearLayout>
