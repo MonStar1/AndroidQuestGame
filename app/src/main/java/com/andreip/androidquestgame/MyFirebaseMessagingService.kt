@@ -18,6 +18,10 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     override fun onMessageReceived(remoteMessage: RemoteMessage?) {
         super.onMessageReceived(remoteMessage)
 
+        val code = remoteMessage?.data!!["level4code"]
+
+        questStatePref.level4Code = code!!
+
         sendNotification()
     }
 

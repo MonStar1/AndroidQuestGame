@@ -34,7 +34,7 @@ class QuestInteractionView @JvmOverloads constructor(
 
         hintTag = attributes.getString(R.styleable.QuestInteractionView_hintTag)!!
 //        hintTimeInSeconds = attributes.getInteger(R.styleable.QuestInteractionView_hintTimeInSeconds, 0)
-        hintTimeInSeconds = 2 // TODO remove later
+        hintTimeInSeconds = 10 // TODO remove later
         hintText = attributes.getString(R.styleable.QuestInteractionView_hintText) ?: ""
         hintImage = attributes.getResourceId(R.styleable.QuestInteractionView_hintImage, 0)
         rightCodes.addAll(attributes.getTextArray(R.styleable.QuestInteractionView_rightCodes).toList())

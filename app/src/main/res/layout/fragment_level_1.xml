@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="В квартире спрятан код для прохождения на следующий уровень. Ищи код за рамкой."/>
+            android:text="В квартире спрятан код для прохождения на следующий уровень. Ищи код за рамкой любимых."/>
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"

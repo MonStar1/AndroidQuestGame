@@ -59,5 +59,10 @@
     <string-array name="level_11_andrei">
         <item>Андрей</item>
         <item>Андрейка</item>
+        <item>андрейка</item>
+    </string-array>
+
+    <string-array name="level_last">
+        <item>0776</item>
     </string-array>
 </resources>

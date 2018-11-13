@@ -13,5 +13,9 @@ enum class QuestState {
     LEVEL_9,
     LEVEL_10,
 
-    LEVEL_11
+    LEVEL_11,
+
+    LEVEL_LAST,
+
+    LEVEL_WON
 }

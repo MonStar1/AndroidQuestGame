@@ -159,5 +159,31 @@
     <fragment
         android:id="@+id/level11Fragment"
         android:name="com.andreip.androidquestgame.level.Level11Fragment"
-        android:label="Level11Fragment" />
+        android:label="Level11Fragment">
+        <action
+            android:id="@+id/action_level11Fragment_to_levelLastFragment"
+            app:destination="@id/levelLastFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelLastFragment"
+        android:name="com.andreip.androidquestgame.level.LevelLastFragment"
+        android:label="LevelLastFragment">
+        <action
+            android:id="@+id/action_levelLastFragment_to_levelWonFragment"
+            app:destination="@id/levelWonFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelWonFragment"
+        android:name="com.andreip.androidquestgame.level.LevelWonFragment"
+        android:label="LevelWonFragment" />
 </navigation>

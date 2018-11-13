@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Уровень 4" />
+            android:text="ПОЗДРАВЛЯЮ !!!!! ПОБЕДА !!!" />
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/LevelDescription"
@@ -28,19 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="А теперь придется немного прогуляться.
-Пойди в магазин Соседи и купи обычную колу 1 литр
-Сумма в чеке будет твоим кодом
-Совет: вводи код сразу" />
-
-        <com.andreip.androidquestgame.widget.QuestInteractionView
-            android:id="@+id/questInteractionView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:hintTag="level_4_tag"
-            app:hintText="Не вышло? Ну тогда просто введи единицу"
-            app:hintTimeInSeconds="1800"
-            app:rightCodes="@array/level_4_codes" />
+            android:text="Моя милая, любимая, прекрасная и наилучшая девочка-жена. Всё для тебя и ради тебя. Я очень тебя люблю !!" />
 
     </LinearLayout>
 
@@ -51,5 +39,16 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:src="@drawable/ic_navigate_next_black_24dp"
-        android:visibility="invisible" />
+        android:visibility="gone" />
+
+    <com.andreip.androidquestgame.widget.QuestInteractionView
+        android:id="@+id/questInteractionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:hintTag="level_WON "
+        app:hintText=" "
+        app:hintTimeInSeconds="500000"
+        app:rightCodes="@array/level_last" />
+
 </FrameLayout>

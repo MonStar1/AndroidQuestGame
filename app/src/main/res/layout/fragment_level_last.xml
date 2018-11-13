@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Уровень 4" />
+            android:text="Последний Уровень" />
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/LevelDescription"
@@ -28,19 +28,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="А теперь придется немного прогуляться.
-Пойди в магазин Соседи и купи обычную колу 1 литр
-Сумма в чеке будет твоим кодом
-Совет: вводи код сразу" />
+            android:text="Найди тайну в квартире. Где живут перекатиполе и откуда новогоднее настроение приходить, если дать ему сил?" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:hintTag="level_4_tag"
-            app:hintText="Не вышло? Ну тогда просто введи единицу"
-            app:hintTimeInSeconds="1800"
-            app:rightCodes="@array/level_4_codes" />
+            app:hintTag="level_LAST"
+            app:hintImage="@drawable/hint_level_last_prize"
+            app:hintText=" "
+            app:hintTimeInSeconds="500"
+            app:rightCodes="@array/level_last" />
 
     </LinearLayout>
 

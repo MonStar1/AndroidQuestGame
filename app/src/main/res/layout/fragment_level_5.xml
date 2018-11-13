@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="По дороге домой внимательно осмотри стену у входа в подъезд. Может и там есть секретные коды?" />
+            android:text="По дороге домой внимательно осмотри стену у входа в подъезд. Может и там есть секретные коды, написанные черным маркером?" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
