@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="Найди тайну в квартире. Где живут перекатиполе и откуда новогоднее настроение приходить, если дать ему сил?" />
+            android:text="Найди тайну в квартире. Где живут перекатиполе и откуда приходит новогоднее настроение, если дать ему энергию?" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"

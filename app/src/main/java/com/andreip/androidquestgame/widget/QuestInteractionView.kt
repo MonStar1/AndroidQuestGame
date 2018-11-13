@@ -7,7 +7,9 @@ import android.view.View
 import android.widget.FrameLayout
 import com.andreip.androidquestgame.R
 import com.andreip.androidquestgame.timer.TimerController
+import com.andreip.androidquestgame.util.gone
 import com.andreip.androidquestgame.util.hideKeyboard
+import com.andreip.androidquestgame.util.invisible
 import com.andreip.androidquestgame.util.visible
 import kotlinx.android.synthetic.main.view_quest_interaction.view.*
 
@@ -33,8 +35,8 @@ class QuestInteractionView @JvmOverloads constructor(
         val attributes = context.theme.obtainStyledAttributes(attrs, R.styleable.QuestInteractionView, defStyleAttr, 0)
 
         hintTag = attributes.getString(R.styleable.QuestInteractionView_hintTag)!!
-//        hintTimeInSeconds = attributes.getInteger(R.styleable.QuestInteractionView_hintTimeInSeconds, 0)
-        hintTimeInSeconds = 10 // TODO remove later
+        hintTimeInSeconds = attributes.getInteger(R.styleable.QuestInteractionView_hintTimeInSeconds, 0)
+//        hintTimeInSeconds = 10 // TODO remove later
         hintText = attributes.getString(R.styleable.QuestInteractionView_hintText) ?: ""
         hintImage = attributes.getResourceId(R.styleable.QuestInteractionView_hintImage, 0)
         rightCodes.addAll(attributes.getTextArray(R.styleable.QuestInteractionView_rightCodes).toList())
@@ -46,10 +48,6 @@ class QuestInteractionView @JvmOverloads constructor(
 
         if (!timer.isTimerStarted()) {
             timer.startNow(hintTimeInSeconds.toLong())
-        }
-
-        if (timer.isTimeOver()) {
-            helpView.visible()
         }
 
         accept.setOnClickListener {
@@ -80,7 +78,11 @@ class QuestInteractionView @JvmOverloads constructor(
         timer.subscribe({
             counter.text = timer.convertMillisToTime(it)
         }, {
-            helpView.visible()
+            counter.invisible()
+            show.visible()
+            show.setOnClickListener {
+                helpView.visible()
+            }
         })
     }
 

@@ -36,7 +36,10 @@ class RegistrationActivity : Activity() {
             registered()
         } else {
             startActivityForResult(
-                    AuthUI.getInstance().createSignInIntentBuilder().build(),
+                    AuthUI.getInstance()
+                            .createSignInIntentBuilder()
+                            .setIsSmartLockEnabled(false)
+                            .build(),
                     RC_SIGN_IN
             )
         }
