@@ -28,18 +28,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="А теперь придется немного прогуляться.
-Пойди в магазин Соседи и купи обычную колу 1 литр
-Сумма в чеке будет твоим кодом
-Совет: вводи код сразу" />
+            android:text="По техническим причинам уровень недоступен =( Страница недоступна HTTP Not Found" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:hintTag="level_4_tag"
-            app:hintText="Не вышло? Ну тогда просто введи единицу"
-            app:hintTimeInSeconds="1800"
+            app:hintText="Какой код показывается в интернете, если страница недоступна???"
+            app:hintTimeInSeconds="120"
             app:rightCodes="@array/level_4_codes" />
 
     </LinearLayout>

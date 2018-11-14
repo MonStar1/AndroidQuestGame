@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="По дороге домой внимательно осмотри стену у входа в подъезд. Может и там есть секретные коды, написанные черным маркером?" />
+            android:text="Придется прогуляться, внимательно осмотри объявления на стене у подъезда. Может там есть секретные коды, написанные черным маркером?" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             app:hintImage="@drawable/hint_level_5_married"
             app:hintTag="level_5_tag_SAW351_X"
-            app:hintText="Любимая, нельзя забывать такие даты."
+            app:hintText="Любимая, напиши нашу важную дату без точек и пробелов =)"
             app:hintTimeInSeconds="900"
             app:rightCodes="@array/level_5_codes_merried" />
 
