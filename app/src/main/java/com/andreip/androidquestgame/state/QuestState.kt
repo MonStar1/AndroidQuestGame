@@ -17,5 +17,7 @@ enum class QuestState {
 
     LEVEL_LAST,
 
-    LEVEL_WON
+    LEVEL_WON,
+
+    LEVEL_404
 }

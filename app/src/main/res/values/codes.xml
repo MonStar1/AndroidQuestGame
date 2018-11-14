@@ -20,6 +20,10 @@
         <item>1</item>
     </string-array>
 
+    <string-array name="level_404_codes">
+        <item>404</item>
+    </string-array>
+
     <string-array name="level_5_codes_merried">
         <item>290917</item>
         <item>29092017</item>

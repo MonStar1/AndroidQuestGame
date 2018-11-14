@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Уровень 5" />
+            android:text="Уровень 4#04" />
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/LevelDescription"
@@ -28,17 +28,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
-            android:text="Внимательно осмотри стену у входа в подъезд номер 3. Может там есть секретные коды, написанные черным маркером?" />
+            android:text="По техническим причинам уровень недоступен =( Страница недоступна HTTP Not Found" />
 
         <com.andreip.androidquestgame.widget.QuestInteractionView
             android:id="@+id/questInteractionView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:hintImage="@drawable/hint_level_5_married"
-            app:hintTag="level_5_tag_SAW351_X"
-            app:hintText="Любимая, напиши нашу важную дату без точек и пробелов =)"
-            app:hintTimeInSeconds="900"
-            app:rightCodes="@array/level_5_codes_merried" />
+            app:hintTag="level_404$#$#%#_tag"
+            app:hintText="Какой код показывается в интернете, если страница недоступна???"
+            app:hintTimeInSeconds="120"
+            app:rightCodes="@array/level_404_codes" />
 
     </LinearLayout>
 
