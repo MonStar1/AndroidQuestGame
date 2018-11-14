@@ -41,6 +41,9 @@ class QuestActivity : FragmentActivity() {
             QuestState.LEVEL_9.ordinal -> R.id.level9Fragment
             QuestState.LEVEL_10.ordinal -> R.id.level10Fragment
             QuestState.LEVEL_11.ordinal -> R.id.level11Fragment
+            QuestState.LEVEL_404.ordinal -> R.id.level404Fragment
+            QuestState.LEVEL_WON.ordinal -> R.id.levelWonFragment
+            QuestState.LEVEL_LAST.ordinal -> R.id.levelLastFragment
             else -> throw IllegalStateException("Level doesn't exists")
         }
 
