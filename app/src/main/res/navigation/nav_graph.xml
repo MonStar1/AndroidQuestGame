@@ -52,25 +52,7 @@
         android:name="com.andreip.androidquestgame.level.Level3Fragment"
         android:label="Level3Fragment">
         <action
-            android:id="@+id/action_level3Fragment_to_level4Fragment"
-            app:destination="@id/level4Fragment"
-            app:enterAnim="@anim/fui_slide_in_right"
-            app:exitAnim="@anim/fui_slide_out_left"
-            app:launchSingleTop="true"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-    </fragment>
-    <fragment
-        android:id="@+id/level4Fragment"
-        android:name="com.andreip.androidquestgame.level.Level4Fragment"
-        android:label="Level4Fragment"
-        app:enterAnim="@anim/fui_slide_in_right"
-        app:exitAnim="@anim/fui_slide_out_left"
-        app:launchSingleTop="true"
-        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim">
-        <action
-            android:id="@+id/action_level4Fragment_to_level404Fragment"
+            android:id="@+id/action_level3Fragment_to_level404Fragment"
             app:destination="@id/level404Fragment"
             app:enterAnim="@anim/fui_slide_in_right"
             app:exitAnim="@anim/fui_slide_out_left"
